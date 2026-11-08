@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
   "builds": [
     {
       "src": "dist/server.js",
@@ -15,8 +17,9 @@
   "env": {
     "NODE_ENV": "production",
     "CACHE_TYPE": "memory",
-    "STREMIO_ADDON": "true",
+    "STREMIO_ADDON": "false",
     "CORS_ORIGIN": "*",
-    "MCP_ENABLED": "true"
+    "MCP_ENABLED": "false",
+    "INTERNAL_DEBUG": "false"
   }
 }
