@@ -81,7 +81,7 @@ export class VidApiProvider extends BaseProvider {
                             : 'hls';
 
                     return {
-                        url: this.createProxyUrl(streamUrl, this.HEADERS),
+                        url: streamUrl,
                         type: sourceType,
                         quality: this.inferQuality(data.file_name),
                         audioTracks: [
